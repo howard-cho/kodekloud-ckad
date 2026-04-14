@@ -12,3 +12,10 @@ spec:
       runAsUser: 1000
       capabilities:
         add: ["MAC_ADMIN"]
+    resources:
+      requests:
+        memory: "0.5Gi"
+        cpu: 1
+      limits:
+        memory: "1Gi"
+        cpu: 2
