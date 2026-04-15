@@ -1,8 +1,9 @@
 apiVersion: v1
 kind: Pod 
 metadata:
-  name: ubuntu-sleeper-2
+  name: ubuntu-sleeper
 spec:
+  serviceAccountName: dashboard-sa
   containers:
   - name: ubuntu
     image: ubuntu
